@@ -1,3 +1,10 @@
+<script lang="coffee">
+exports.default =
+  name: 'hello'
+  data: ->
+    { msg: 'Welcome to Your Awesome Vue.js App' }
+</script>
+
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -19,17 +26,6 @@
     </ul>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Awesome Vue.js App'
-    }
-  }
-}
-</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
