@@ -3,7 +3,8 @@ Hello = require './components/Hello'
 
 exports.default =
   name: 'app'
-  components: Hello: Hello
+  components:
+    hello: Hello
 </script>
 
 <template lang="pug">

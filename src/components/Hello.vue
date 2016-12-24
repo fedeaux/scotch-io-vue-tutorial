@@ -1,4 +1,5 @@
 <script lang="coffee">
+
 exports.default =
   name: 'hello'
   data: ->
