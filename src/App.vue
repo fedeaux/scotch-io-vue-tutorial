@@ -6,11 +6,12 @@ exports.default =
   components: Hello: Hello
 </script>
 
-<template>
-  <div id="app"> <!-- This html with replace the original <tagname/> -->
-    <img src="./assets/logo.png">
-    <hello></hello> <!-- Look! Another tag that will be replaced with a component -->
-  </div>
+<template lang="pug">
+#app
+  // This html with replace the original <tagname/>
+  img(src='./assets/logo.png')
+  hello
+  // Look! Another tag that will be replaced with a component
 </template>
 
 <style>

@@ -12,6 +12,8 @@
     "test": "npm run unit && npm run e2e"
   },
   "dependencies": {
+    "pug": "^2.0.0-beta6",
+    "slim": "0.0.4",
     "vue": "^2.1.0",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.1"
