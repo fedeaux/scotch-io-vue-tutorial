@@ -1,18 +1,22 @@
 <script lang="coffee">
-Hello = require './components/Hello'
-
-exports.default =
-  name: 'app'
-  components:
-    hello: Hello
 </script>
 
 <template lang="pug">
-#app
-  // This html with replace the original <tagname/>
-  img(src='./assets/logo.png')
-  hello
-  // Look! Another tag that will be replaced with a component
+#wrapper
+  nav.navbar.navbar-default
+    .container
+      a.navbar-brand(href='#')
+        i.glyphicon.glyphicon-time
+        |           Vue Time Tracker
+      ul.nav.navbar-nav
+        li
+          router-link(to="/home") Home
+        li
+          router-link(to="/time-entries") Time Entries
+  .container
+    .col-sm-3
+    .col-sm-9
+      router-view
 </template>
 
 <style lang="sass">
