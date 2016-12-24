@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app"> <!-- This html with replace the original <tagname/> -->
     <img src="./assets/logo.png">
-    <hello></hello>
+    <hello></hello> <!-- Look! Another tag that will be replaced with a component -->
   </div>
 </template>
 
@@ -9,11 +9,13 @@
 import Hello from './components/Hello'
 
 export default {
-  name: 'app',
+  name: 'app', /* What is this used for? */
   components: {
-    Hello
+    Hello /* The previously mentioned component */
   }
 }
+
+// Go to components/Hello.vue
 </script>
 
 <style>
