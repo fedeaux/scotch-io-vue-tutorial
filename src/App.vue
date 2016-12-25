@@ -1,4 +1,19 @@
 <script lang="coffee">
+Sidebar = require('./components/Sidebar.vue')
+
+exports.default =
+  components:
+    'sidebar': Sidebar
+
+  data: ->
+    { totalTime: 1.5 }
+
+  events:
+    timeUpdate: (timeEntry) ->
+      @totalTime += parseFloat(timeEntry.totalTime)
+
+    deleteTime: (timeEntry) ->
+      @totalTime -= parseFloat(timeEntry.totalTime)
 </script>
 
 <template lang="pug">
@@ -15,6 +30,7 @@
           router-link(to="/time-entries") Time Entries
   .container
     .col-sm-3
+      sidebar(:time="totalTime")
     .col-sm-9
       router-view
 </template>
